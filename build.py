@@ -83,7 +83,7 @@ gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_personal
 gtag('set','ads_data_redaction',true);
 </script>"""
 
-def page(fn, title, desc, body, active=None, schema=None, robots="index,follow"):
+def page(fn, title, desc, body, active=None, schema=None, robots="index,follow", base=False):
     url = BASE + "/" + ("" if fn == "index.html" else fn)
     nav = "".join(
         f'<li><a href="{h}"{" aria-current=page" if h == active else ""}>{e(t)}</a></li>' for h, t in NAV)
@@ -93,6 +93,7 @@ def page(fn, title, desc, body, active=None, schema=None, robots="index,follow")
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+{f'<base href="{urllib.parse.urlparse(BASE).path.rstrip("/")}/">' if base else ""}
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
@@ -506,7 +507,7 @@ pages.append(page("cerez-politikasi.html", "Çerez Politikası | New Grup Danı�
 # ---------- 404 ----------
 page("404.html", "Sayfa bulunamadı | New Grup Danışmanlık", "Aradığınız sayfa bulunamadı.",
      page_hero("404", "Sayfa bulunamadı", "Aradığınız sayfa taşınmış veya kaldırılmış olabilir.",
-               '<a class="btn btn-primary" href="index.html">Ana sayfaya dön</a>' + randevu('404')), robots="noindex")
+               '<a class="btn btn-primary" href="index.html">Ana sayfaya dön</a>' + randevu('404')), robots="noindex", base=True)
 
 # ---------- sitemap & robots ----------
 prio = {"": "1.0", "fiyatlar.html": "0.9", "temizlik-hizmetleri.html": "0.9"}
