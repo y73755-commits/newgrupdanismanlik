@@ -1,0 +1,185 @@
+{
+  "_aciklama": "Fiyat, bölge, iletişim ve ölçüm bilgilerini bu dosyadan güncelleyin. Kaydettiğinizde site otomatik olarak yeniden oluşturulur.",
+
+  "site": {
+    "ad": "New Grup Danışmanlık",
+    "kisa_ad": "New Grup",
+    "slogan": "İstanbul'da randevulu ev, ofis, villa ve plaza temizliği",
+    "site_url": "https://y73755-commits.github.io/newgrupdanismanlik",
+    "dil": "tr",
+    "sehir": "İstanbul",
+    "google_site_verification": ""
+  },
+
+  "iletisim": {
+    "yetkili": "Burak Bey",
+    "telefon_gosterim": "+90 531 843 94 58",
+    "telefon_link": "+905318439458",
+    "whatsapp_link": "https://wa.me/905318439458",
+    "calisma_sekli": "Randevu ile çalışılır"
+  },
+
+  "olcum": {
+    "_aciklama": "Kimlikler boş kaldığı sürece hiçbir Google etiketi yüklenmez. Ziyaretçi izin vermeden yine yüklenmez.",
+    "ga4_id": "",
+    "google_ads_id": "",
+    "ads_donusum_whatsapp": "",
+    "ads_donusum_telefon": ""
+  },
+
+  "ev_fiyatlari": [
+    { "hizmet": "1+0 ve 1+1 ev temizliği", "fiyat": "2.500 TL", "kisa": "1+1" },
+    { "hizmet": "2+1 ev temizliği", "fiyat": "3.250 TL", "kisa": "2+1" },
+    { "hizmet": "3+1 ev temizliği", "fiyat": "4.000 TL", "kisa": "3+1" },
+    { "hizmet": "4+1 ev temizliği", "fiyat": "5.000 TL", "kisa": "4+1" },
+    { "hizmet": "3+2 ve 4+2 dubleks daire temizliği", "fiyat": "6.500 TL", "kisa": "Dubleks" }
+  ],
+
+  "ofis_fiyati": {
+    "hizmet": "Ofis temizliği",
+    "fiyat": "2.500–5.000 TL",
+    "not": "Ofis fiyatı metrekareye ve işin kapsamına göre belirlenir."
+  },
+
+  "fiyat_notlari": [
+    "Ev temizliği fiyatları sabittir.",
+    "Ev temizliği fiyatlarına banyo, teras ve içeriden güvenle erişilebilen camların temizliği dahildir.",
+    "Villa ve plaza temizliği için keşif bilgisine göre teklif verilir."
+  ],
+
+  "kapsam_disi": "Dış cephe temizliği ve yüksek binaların dış cam temizliği hizmet kapsamı dışındadır.",
+
+  "temizlik_hizmetleri": [
+    {
+      "id": "ev-temizligi",
+      "gorsel": "ev-mutfak",
+      "gorsel_alt": "Mutfak tezgâhını silen temizlik görevlisi",
+      "baslik": "Ev Temizliği",
+      "tip": "randevu",
+      "ozet": "1+0'dan 4+1'e ve dubleks dairelere kadar sabit fiyatlı ev temizliği.",
+      "maddeler": ["Odalar, salon ve mutfak", "Banyo ve tuvaletler", "Teras", "İçeriden güvenle erişilebilen camlar"],
+      "fiyat_metni": "2.500 TL'den başlayan sabit fiyatlar"
+    },
+    {
+      "id": "ofis-temizligi",
+      "gorsel": "ofis",
+      "gorsel_alt": "Ofiste halıyı süpüren temizlik görevlisi",
+      "baslik": "Ofis Temizliği",
+      "tip": "teklif",
+      "ozet": "Çalışma alanları, toplantı odaları, mutfak ve ıslak hacimler için düzenli veya tek seferlik temizlik.",
+      "maddeler": ["Çalışma ve toplantı alanları", "Ofis mutfağı", "Islak hacimler", "Metrekareye göre fiyat"],
+      "fiyat_metni": "2.500–5.000 TL arası"
+    },
+    {
+      "id": "villa-temizligi",
+      "gorsel": "villa",
+      "gorsel_alt": "Villa salonunda mermer sehpayı silen temizlik görevlisi",
+      "baslik": "Villa Temizliği",
+      "tip": "teklif",
+      "ozet": "Çok katlı ve geniş yaşam alanları için iç mekân temizliği.",
+      "maddeler": ["Tüm iç mekân katları", "Banyolar ve mutfak", "Teras", "İçeriden erişilebilen camlar"],
+      "fiyat_metni": "Teklif ile"
+    },
+    {
+      "id": "plaza-temizligi",
+      "gorsel": "plaza",
+      "gorsel_alt": "Plaza lobisinde zemin temizleme makinesi kullanan görevli",
+      "baslik": "Plaza İç Mekân Temizliği",
+      "tip": "teklif",
+      "ozet": "Plaza katları ve ortak iç alanlar için planlı temizlik.",
+      "maddeler": ["Kat ofisleri", "Ortak iç alanlar", "Islak hacimler", "Kapsama göre planlama"],
+      "fiyat_metni": "Teklif ile"
+    }
+  ],
+
+  "bolgeler": [
+    { "ad": "Maslak", "yaka": "Avrupa" },
+    { "ad": "Şişli", "yaka": "Avrupa" },
+    { "ad": "Sarıyer", "yaka": "Avrupa" },
+    { "ad": "Ayazağa", "yaka": "Avrupa" },
+    { "ad": "Beşiktaş", "yaka": "Avrupa" },
+    { "ad": "Kağıthane", "yaka": "Avrupa" },
+    { "ad": "Levent", "yaka": "Avrupa" },
+    { "ad": "Etiler", "yaka": "Avrupa" },
+    { "ad": "Kadıköy", "yaka": "Anadolu" },
+    { "ad": "Pendik", "yaka": "Anadolu" },
+    { "ad": "Kartal", "yaka": "Anadolu" },
+    { "ad": "Maltepe", "yaka": "Anadolu" },
+    { "ad": "Üsküdar", "yaka": "Anadolu" },
+    { "ad": "Ünalan", "yaka": "Anadolu" }
+  ],
+
+  "kurumsal_hizmetler": [
+    { "baslik": "Bahçıvan", "ozet": "Villa, site ve iş yeri bahçeleri için bakım personeli.", "yayinda": true },
+    { "baslik": "Şoför", "ozet": "Kurumsal ve özel ulaşım ihtiyaçları için şoför desteği.", "yayinda": true },
+    { "baslik": "Vale", "ozet": "Etkinlik, restoran, otel ve iş yerleri için vale personeli.", "yayinda": true },
+    { "baslik": "Danışma Personeli", "ozet": "Karşılama, yönlendirme ve resepsiyon desteği.", "yayinda": true },
+    {
+      "baslik": "Özel Güvenlik",
+      "ozet": "Etkinlik ve iş yerleri için özel güvenlik hizmeti.",
+      "yayinda": false,
+      "_not": "Yayın öncesi ilgili özel güvenlik faaliyet izni doğrulanmalı. Doğrulandıktan sonra yayinda: true yapın."
+    },
+    {
+      "baslik": "Yakın Koruma",
+      "ozet": "Kişiye özel yakın koruma hizmeti.",
+      "yayinda": false,
+      "_not": "Yayın öncesi ilgili özel güvenlik faaliyet izni doğrulanmalı. Doğrulandıktan sonra yayinda: true yapın."
+    }
+  ],
+
+  "personel_sureleri": ["Günlük", "Haftalık", "Aylık"],
+
+  "odeme_kosullari": [
+    "Hizmetlerimiz randevu ile verilir.",
+    "Ödeme, hizmetten önce peşin alınır.",
+    "Müşteri tarafından iptal edilen randevular, uygunluğa göre başka bir tarihe alınabilir.",
+    "Yasal cayma ve iade hakları saklıdır. Bu hakların doğmadığı durumlarda ücret iadesi yapılmaz."
+  ],
+
+  "memnuniyet": "Temizlikle ilgili bir sorun yaşarsanız Burak Bey'e ulaşın. Bildiriminizi değerlendirip çözüm için sizinle iletişime geçelim.",
+
+  "sss": [
+    {
+      "s": "Ev temizliği fiyatına neler dahil?",
+      "c": "Ev temizliği fiyatlarına banyo, teras ve içeriden güvenle erişilebilen camların temizliği dahildir. Dış cephe temizliği ve yüksek binaların dış cam temizliği hizmet kapsamı dışındadır."
+    },
+    {
+      "s": "Ev temizliği fiyatları değişir mi?",
+      "c": "Hayır. Ev temizliği fiyatları daire tipine göre sabittir. Ofis temizliği fiyatı ise metrekareye ve işin kapsamına göre belirlenir."
+    },
+    {
+      "s": "Villa ve plaza temizliği ne kadar?",
+      "c": "Villa ve plaza iç mekân temizliğinde alan ve kapsam farklı olduğu için WhatsApp'tan bilgi gönderdiğinizde size özel teklif hazırlanır."
+    },
+    {
+      "s": "Nasıl randevu alırım?",
+      "c": "WhatsApp'tan Randevu Al butonuna dokunun; daire tipinizi, semtinizi ve uygun gününüzü yazın. Burak Bey size dönüş yapar."
+    },
+    {
+      "s": "Ödeme nasıl alınıyor?",
+      "c": "Randevu ile çalışılır ve ödeme hizmetten önce peşin alınır. Ödeme öncesinde koşullar size yazılı olarak iletilir."
+    },
+    {
+      "s": "Randevumu iptal edersem ne olur?",
+      "c": "Randevunuz uygunluğa göre başka bir tarihe alınabilir. Yasal cayma ve iade hakları saklıdır; bu hakların doğmadığı durumlarda ücret iadesi yapılmaz."
+    },
+    {
+      "s": "Temizlikten memnun kalmazsam ne yapmalıyım?",
+      "c": "Temizlikle ilgili bir sorun yaşarsanız Burak Bey'e ulaşın. Bildiriminizi değerlendirip çözüm için sizinle iletişime geçelim."
+    },
+    {
+      "s": "Hangi bölgelere hizmet veriyorsunuz?",
+      "c": "İstanbul'da Maslak, Şişli, Sarıyer, Ayazağa, Beşiktaş, Kağıthane, Levent, Etiler, Kadıköy, Pendik, Kartal, Maltepe, Üsküdar ve Ünalan'da hizmet veriyoruz."
+    }
+  ],
+
+  "sirket_bilgileri": {
+    "_aciklama": "KVKK metninde veri sorumlusu olarak görünür. Resmî bilgiler doğrulandıkça doldurun; boş alanlar sitede 'eklenecek' olarak görünmez, satır hiç basılmaz.",
+    "resmi_unvan": "",
+    "adres": "",
+    "mersis_no": "",
+    "vergi_dairesi_no": "",
+    "eposta": ""
+  }
+}
