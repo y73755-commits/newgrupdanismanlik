@@ -143,8 +143,9 @@ p{margin:0 0 1em}
 .svc-img img,.card-img img{aspect-ratio:3/2;object-fit:cover;width:100%}
 .card-img{padding:0;overflow:hidden}
 .card-img>*:not(img){margin-left:22px;margin-right:22px}
-.card-img h2{margin-top:18px}
+.card-img h2,.card-img h3{margin-top:18px}
 .card-img .btn{margin-bottom:22px}
+.k-card.card-img .k-terms{margin-left:22px}
 .svc-price{font-weight:800;color:var(--teal);margin-top:auto}
 .svc .more{margin-bottom:20px}
 .svc-ic{width:56px;height:56px;border-radius:14px;background:var(--mint-bg);color:var(--teal);display:grid;place-items:center;margin-bottom:14px}
@@ -170,8 +171,16 @@ p{margin:0 0 1em}
 
 .chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
 .chips li{background:var(--mint-bg);color:var(--teal);font-weight:700;padding:.45em .95em;border-radius:999px;font-size:.95rem}
-.dark-cta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
-@media (max-width:860px){.dark-cta{justify-content:flex-start}}
+.dark-cta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.dark-photo img{border-radius:20px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.dahil-h{margin-top:40px}
+.dahil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dahil{margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#fff}
+.dahil img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.dahil figcaption{display:flex;gap:8px;align-items:center;padding:12px 14px;font-weight:700}
+.dahil svg{width:20px;height:20px;color:var(--teal-2)}
+.spacer{height:36px}
+@media (max-width:760px){.dahil-grid{grid-template-columns:1fr}}
 
 .promise{display:grid;grid-template-columns:1.4fr .6fr;gap:28px;align-items:center;background:var(--mint-bg);border-radius:24px;padding:36px}
 .promise-cta{display:flex;flex-direction:column;gap:10px}

@@ -110,10 +110,10 @@
   ],
 
   "kurumsal_hizmetler": [
-    { "baslik": "Bahçıvan", "ozet": "Villa, site ve iş yeri bahçeleri için bakım personeli.", "yayinda": true },
-    { "baslik": "Şoför", "ozet": "Kurumsal ve özel ulaşım ihtiyaçları için şoför desteği.", "yayinda": true },
-    { "baslik": "Vale", "ozet": "Etkinlik, restoran, otel ve iş yerleri için vale personeli.", "yayinda": true },
-    { "baslik": "Danışma Personeli", "ozet": "Karşılama, yönlendirme ve resepsiyon desteği.", "yayinda": true },
+    { "baslik": "Bahçıvan", "gorsel": "bahcivan", "gorsel_alt": "Villa bahçesinde çiçek diken bahçıvan", "ozet": "Villa, site ve iş yeri bahçeleri için bakım personeli.", "yayinda": true },
+    { "baslik": "Şoför", "gorsel": "sofor", "gorsel_alt": "Otel önünde müşterisine araç kapısını açan şoför", "ozet": "Kurumsal ve özel ulaşım ihtiyaçları için şoför desteği.", "yayinda": true },
+    { "baslik": "Vale", "gorsel": "vale", "gorsel_alt": "Bina girişinde araç kapısını açan vale", "ozet": "Etkinlik, restoran, otel ve iş yerleri için vale personeli.", "yayinda": true },
+    { "baslik": "Danışma Personeli", "gorsel": "danisma", "gorsel_alt": "Lobide ziyaretçiyi karşılayan danışma personeli", "ozet": "Karşılama, yönlendirme ve resepsiyon desteği.", "yayinda": true },
     {
       "baslik": "Özel Güvenlik",
       "ozet": "Etkinlik ve iş yerleri için özel güvenlik hizmeti.",

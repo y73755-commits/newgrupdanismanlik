@@ -203,6 +203,14 @@ def price_table(cta=True):
 def kapsam_box():
     return f'<div class="note note-warn">{ICON["x"]}<p><b>Kapsam dışı:</b> {e(D["kapsam_disi"])}</p></div>'
 
+DAHIL = [("banyo","Banyo","Banyo tezgâhını silen temizlik görevlisi"),
+         ("teras","Teras","Terası paspaslayan temizlik görevlisi"),
+         ("cam","İçeriden erişilebilen camlar","Pencere camını içeriden silen temizlik görevlisi")]
+
+def dahil_gallery():
+    items = "".join(f'<figure class="dahil">{pic(n, alt, sizes="(max-width: 760px) 100vw, 33vw")}<figcaption>{ICON["check"]}{e(t)}</figcaption></figure>' for n, t, alt in DAHIL)
+    return f'<div class="dahil-grid">{items}</div>'
+
 def includes_list():
     items = ["Banyo", "Teras", "İçeriden güvenle erişilebilen camlar"]
     return '<ul class="ticks">' + "".join(f'<li>{ICON["check"]}{e(i)}</li>' for i in items) + "</ul>"
@@ -271,6 +279,8 @@ home = f"""
 <section class="sec"><div class="wrap">
   <div class="sec-head"><p class="eyebrow">Hizmetler</p><h2>Temizlik hizmetlerimiz</h2></div>
   <div class="grid-4">{svc_cards}</div>
+  <h3 class="dahil-h">Ev temizliği fiyatına dahil</h3>
+  {dahil_gallery()}
   {kapsam_box()}
 </div></section>
 
@@ -291,9 +301,10 @@ home = f"""
 </div></section>
 
 <section class="sec sec-dark"><div class="wrap split">
+  <div class="dark-photo">{pic('bahcivan', 'Villa bahçesinde çiçek diken bahçıvan', sizes="(max-width: 860px) 100vw, 50vw")}</div>
   <div><p class="eyebrow eyebrow-l">Kurumsal</p><h2>Personel temini</h2>
-  <p>{", ".join(e(k['baslik']) for k in kurumsal_pub)} hizmetleri; günlük, haftalık ve aylık seçeneklerle.</p></div>
-  <div class="dark-cta">{teklif('home-kurumsal', 'kurumsal personel', 'btn btn-light')}<a class="more more-l" href="kurumsal-hizmetler.html">Kurumsal hizmetler →</a></div>
+  <p>{", ".join(e(k['baslik']) for k in kurumsal_pub)} hizmetleri; günlük, haftalık ve aylık seçeneklerle.</p>
+  <div class="dark-cta">{teklif('home-kurumsal', 'kurumsal personel', 'btn btn-light')}<a class="more more-l" href="kurumsal-hizmetler.html">Kurumsal hizmetler →</a></div></div>
 </div></section>
 
 {memnuniyet_block()}
@@ -314,7 +325,7 @@ svc_page = page_hero("Temizlik Hizmetleri", "İstanbul’da ev, ofis, villa ve p
     "Ev temizliği sabit fiyatlıdır. Ofis, villa ve plaza işlerinde fiyat alan ve kapsama göre belirlenir.",
     randevu('svc-hero') + teklif('svc-hero', 'ofis temizliği')) + f"""
 <section class="sec"><div class="wrap">
-<div class="incl"><div><h2 class="h3">Ev temizliği fiyatına dahil</h2>{includes_list()}</div>{kapsam_box()}</div>
+<h2 class="h3">Ev temizliği fiyatına dahil</h2>{dahil_gallery()}{kapsam_box()}<div class="spacer"></div>
 <div class="svc-list">{detail}</div></div></section>{cta_band()}"""
 pages.append(page("temizlik-hizmetleri.html", "Temizlik Hizmetleri İstanbul | Ev, Ofis, Villa, Plaza – New Grup",
     "İstanbul'da ev, ofis, villa ve plaza iç mekân temizliği. Banyo, teras ve içeriden erişilebilen camlar ev temizliği fiyatına dahil.",
@@ -358,7 +369,7 @@ pages.append(page("hizmet-bolgeleri.html", "Temizlik Hizmet Bölgeleri | Sarıye
     bolge, "hizmet-bolgeleri.html", [bc("Hizmet Bölgeleri", "hizmet-bolgeleri.html")]))
 
 # ---------- KURUMSAL ----------
-k_cards = "".join(f"""<article class="card k-card"><h3>{e(k['baslik'])}</h3><p>{e(k['ozet'])}</p>
+k_cards = "".join(f"""<article class="card k-card{' card-img' if k.get('gorsel') else ''}">{pic(k['gorsel'], k.get('gorsel_alt',''), sizes="(max-width: 760px) 100vw, 25vw") if k.get('gorsel') else ''}<h3>{e(k['baslik'])}</h3><p>{e(k['ozet'])}</p>
 <div class="k-terms">{"".join(f'<span class="pill">{e(t)}</span>' for t in D['personel_sureleri'])}</div>
 {teklif('kurumsal-' + k['baslik'].lower(), k['baslik'].lower() + ' personeli', 'btn btn-primary btn-sm')}</article>""" for k in kurumsal_pub)
 kurumsal = page_hero("Kurumsal Hizmetler", "Kurumsal temizlik ve personel temini",
