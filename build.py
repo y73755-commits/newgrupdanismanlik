@@ -365,7 +365,7 @@ bolge = page_hero("Hizmet Bölgeleri", "İstanbul’da hizmet verdiğimiz bölge
     "Aşağıdaki bölgelerde randevulu ev, ofis, villa ve plaza iç mekân temizliği yapıyoruz.") + f"""
 <section class="sec"><div class="wrap grid-2">{yaka_block('Avrupa')}{yaka_block('Anadolu')}</div>
 <div class="wrap"><p class="muted center">Bölgeniz listede yoksa WhatsApp’tan sorabilirsiniz.</p></div></section>{cta_band('Bölgenizde randevu alın')}"""
-pages.append(page("hizmet-bolgeleri.html", "Temizlik Hizmet Bölgeleri | Sarıyer, Şişli, Beşiktaş, Kadıköy – New Grup",
+pages.append(page("hizmet-bolgeleri.html", "Temizlik Hizmet Bölgeleri | Sarıyer, Şişli, Kadıköy – New Grup",
     "Maslak, Şişli, Sarıyer, Ayazağa, Beşiktaş, Kağıthane, Levent, Etiler, Kadıköy, Pendik, Kartal, Maltepe, Üsküdar ve Ünalan'da ev ve ofis temizliği.",
     bolge, "hizmet-bolgeleri.html", [bc("Hizmet Bölgeleri", "hizmet-bolgeleri.html")]))
 
@@ -382,7 +382,7 @@ kurumsal = page_hero("Kurumsal Hizmetler", "Kurumsal temizlik ve personel temini
   <div class="card card-img">{pic('ofis', 'Ofiste halıyı süpüren temizlik görevlisi', sizes="(max-width: 760px) 100vw, 50vw")}<h2 class="h3">Ofis temizliği</h2><p>{e(D['ofis_fiyati']['not'])} Fiyat aralığı: <b>{e(D['ofis_fiyati']['fiyat'])}</b>.</p>{teklif('kurumsal-ofis', 'ofis temizliği', 'btn btn-primary btn-sm')}</div>
   <div class="card card-img">{pic('plaza', 'Plaza lobisinde zemin temizleme makinesi kullanan görevli', sizes="(max-width: 760px) 100vw, 50vw")}<h2 class="h3">Plaza iç mekân temizliği</h2><p>Plaza katları ve ortak iç alanlar için kapsamınıza göre teklif hazırlanır.</p>{teklif('kurumsal-plaza', 'plaza temizliği', 'btn btn-primary btn-sm')}</div>
 </div></section>"""
-pages.append(page("kurumsal-hizmetler.html", "Kurumsal Hizmetler İstanbul | Şoför, Vale, Bahçıvan, Danışma Personeli",
+pages.append(page("kurumsal-hizmetler.html", "Kurumsal Hizmetler İstanbul | Şoför, Vale, Bahçıvan – New Grup",
     "İstanbul'da bahçıvan, şoför, vale ve danışma personeli temini; günlük, haftalık ve aylık seçenekler. Ofis ve plaza temizliği için teklif alın.",
     kurumsal, "kurumsal-hizmetler.html", [bc("Kurumsal Hizmetler", "kurumsal-hizmetler.html")]))
 
@@ -406,7 +406,7 @@ iletisim = page_hero("İletişim", "Randevu ve teklif için bize ulaşın", f"{C
 </div>
 <div class="wrap narrow"><div class="card"><h2 class="h3">Hizmet bölgeleri</h2><p>{e(", ".join(REGION_NAMES))}.</p></div></div></section>
 {memnuniyet_block()}"""
-pages.append(page("iletisim.html", "İletişim | New Grup Danışmanlık İstanbul Temizlik – WhatsApp Randevu",
+pages.append(page("iletisim.html", "İletişim ve WhatsApp Randevu | New Grup Danışmanlık",
     f"New Grup Danışmanlık iletişim: {C['telefon_gosterim']}. Yetkili {C['yetkili']}. WhatsApp'tan ev temizliği randevusu ve ofis temizliği teklifi alın.",
     iletisim, "iletisim.html", [bc("İletişim", "iletisim.html")]))
 
